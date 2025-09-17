@@ -16,8 +16,8 @@ Save best → predict_cli.py
 
 ## Key Decisions
 - **TF‑IDF features** convert text to numerical vectors while down‑weighting common words.  This is a standard and strong baseline for text classification.
-- **Multinomial Naive Bayes** applies Bayes’ theorem with a “naive” independence assumption and is particularly effective and fast on text classification【307774325658384†L127-L149】.
-- **Logistic Regression** is implemented in scikit‑learn as a linear classifier that models class probabilities using a logistic (sigmoid) function. It supports binary and multinomial tasks and incorporates regularisation【66734902495573†L838-L870】.
+- **Multinomial Naive Bayes** applies Bayes’ theorem with a “naive” independence assumption and is particularly effective and fast on text classification.
+- **Logistic Regression** is implemented in scikit‑learn as a linear classifier that models class probabilities using a logistic (sigmoid) function. It supports binary and multinomial tasks and incorporates regularisation.
 - **Hyperparameter sweep**: we search over regularisation strength `C` values `[0.5, 1.0, 2.0]` for logistic regression to pick the best F1.
 
 ## Trade‑offs & Alternatives
@@ -31,6 +31,6 @@ Save best → predict_cli.py
 - **Reproducibility**: fix a random seed (e.g. 42) and use a deterministic split.
 
 ## References
-- Naive Bayes assumptions and effectiveness for text classification【307774325658384†L127-L149】.
-- Logistic regression as a linear classifier using a logistic function and regularisation【66734902495573†L838-L870】.
-- Enron dataset description and size【14671641396911†L54-L117】.
+- Naive Bayes assumptions and effectiveness for text classification.
+- Logistic regression as a linear classifier using a logistic function and regularisation.
+- Enron dataset description and size.

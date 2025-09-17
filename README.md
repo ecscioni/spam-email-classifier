@@ -7,7 +7,7 @@
 Email users face an ongoing flood of unwanted messages. Effective spam filtering protects users from phishing, fraud and wasted time. This project teaches how to turn raw email text into features, train interpretable models and evaluate them.
 
 ## Dataset
-Primary dataset: **Enron Spam Email dataset**. A version of the Enron email collection labelled as `ham` (legitimate) or `spam`, with subject and message merged into a text field. The dataset contains about 33.7k rows with a train/test split of 31.7k/2k messages【14671641396911†L54-L62】. Each record includes a `message_id`, the `text` (subject+message), a binary `label`, a `label_text` string, plus `subject`, `message` and `date` columns【14671641396911†L54-L117】.  You can download the full dataset from Hugging Face or Kaggle; see `DATA_CARD.md` for details.
+Primary dataset: **Enron Spam Email dataset**. A version of the Enron email collection labelled as `ham` (legitimate) or `spam`, with subject and message merged into a text field. The dataset contains about 33.7k rows with a train/test split of 31.7k/2k messages. Each record includes a `message_id`, the `text` (subject+message), a binary `label`, a `label_text` string, plus `subject`, `message` and `date` columns.  You can download the full dataset from Hugging Face or Kaggle; see `DATA_CARD.md` for details.
 
 For portability, this repository contains a **small sample file** at `data/enron_sample.csv` with five examples to let you run the code out‑of‑the‑box. Replace it with the full dataset for training a real model.
 
@@ -52,6 +52,6 @@ Your scores will vary with the data split and dataset size.
 ## How it works (short)
 - **Vectorization**: `TfidfVectorizer` converts emails into a bag‑of‑words representation.  This highlights important terms by weighting rare words more heavily than common words.
 - **Models**: 
-  - **Multinomial Naive Bayes** assumes conditional independence of features and is particularly fast and effective on text【307774325658384†L127-L149】.
-  - **Logistic Regression** models the probability of spam using a logistic (sigmoid) function. In scikit‑learn it is implemented as a linear classifier with regularisation; probabilities are converted to classes via a threshold【66734902495573†L838-L870】.
+  - **Multinomial Naive Bayes** assumes conditional independence of features and is particularly fast and effective on text.
+  - **Logistic Regression** models the probability of spam using a logistic (sigmoid) function. In scikit‑learn it is implemented as a linear classifier with regularisation; probabilities are converted to classes via a threshold.
 - **Metrics**: we report accuracy, precision, recall and F1 score; see `TESTING.md` for details.

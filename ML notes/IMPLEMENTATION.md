@@ -11,8 +11,8 @@ This document records how the project was built step by step and ties explanatio
 
 We implement two Scikit‑Learn pipelines to encapsulate feature extraction and model training:
 
-1. **Naive Bayes pipeline**: `TfidfVectorizer(ngram_range=(1,2), min_df=2)` followed by `MultinomialNB`.  The TF‑IDF vectoriser converts text into weighted term frequency vectors; the Naive Bayes classifier assumes conditional independence and works well on sparse count data【307774325658384†L127-L149】.
-2. **Logistic Regression pipeline**: `TfidfVectorizer(ngram_range=(1,2), min_df=2)` followed by `LogisticRegression(C=C, max_iter=200, solver="liblinear")`.  Logistic regression models the log‑odds of spam and supports regularisation【66734902495573†L838-L870】.
+1. **Naive Bayes pipeline**: `TfidfVectorizer(ngram_range=(1,2), min_df=2)` followed by `MultinomialNB`.  The TF‑IDF vectoriser converts text into weighted term frequency vectors; the Naive Bayes classifier assumes conditional independence and works well on sparse count data.
+2. **Logistic Regression pipeline**: `TfidfVectorizer(ngram_range=(1,2), min_df=2)` followed by `LogisticRegression(C=C, max_iter=200, solver="liblinear")`.  Logistic regression models the log‑odds of spam and supports regularisation.
 
 Both pipelines are built using Scikit‑Learn’s `Pipeline` class, which ensures that the same preprocessing is applied at train and prediction time.
 
