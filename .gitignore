@@ -1,0 +1,16 @@
+# Ignore Python virtual environments and caches
+.venv/
+__pycache__/
+*.pyc
+
+# Ignore OS files
+.DS_Store
+
+# Ignore model binaries and reports
+models/*.joblib
+reports/*.png
+reports/*.json
+reports/train_summary.json
+
+# Ignore other build artifacts
+.pytest_cache/

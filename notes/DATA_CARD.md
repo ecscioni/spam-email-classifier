@@ -1,0 +1,8 @@
+# DATA_CARD.md — Enron Spam Email Dataset
+
+- **Source**: The Enron email corpus, which was made public following the Enron scandal.  The spam/ham labels originate from subsequent research efforts.  The version referenced here (Hugging Face `SetFit/enron_spam`) contains about 33.7k labelled emails split into 31.7k training and 2k test examples【14671641396911†L54-L62】.
+- **Features**: Each entry includes a `message_id` (integer), a `text` field containing the subject and body concatenated, a numeric `label` (0 = ham, 1 = spam), a textual `label_text` (`ham` or `spam`), and additional fields such as `subject`, `message` and `date`【14671641396911†L54-L117】.
+- **Licensing**: The dataset is distributed under the original terms of the Enron corpus.  It is intended for research and educational use.  Users should respect privacy and avoid republishing personal information contained in the emails.
+- **Collection notes**: Emails were collected from Enron employees’ mailboxes in the early 2000s.  The spam labels were assigned later, potentially through automated filters and manual curation.  Some messages may contain sensitive or personal content.
+- **Ethical considerations**: Working with personal email data raises privacy concerns; use the data responsibly and anonymise any examples shared publicly.  Because the data is over two decades old, it may embed outdated language and cultural biases.  The class distribution is skewed towards legitimate emails.
+- **Limitations**: Spam tactics have evolved since the early 2000s; models trained on Enron spam may not generalise to modern phishing and scam messages.  Most messages are in English; multilingual spam may require separate datasets.  There may be noise and duplicates in the data.
