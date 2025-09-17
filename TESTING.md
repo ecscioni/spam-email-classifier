@@ -25,8 +25,8 @@ python src/predict_cli.py "Subject: Meeting notes attached for review."
 | Case | Expected | Actual (example) |
 | --- | --- | --- |
 | Obvious spam (prize offer, free, click) | spam | spam (probability ≈ 0.95) |
-| Neutral business email | ham | ham (probability ≈ 0.90) |
+| Neutral business email | ham | spam (probability ≈ 0.03) |
 
 ## Edge Cases
 - Very short messages like “OK” or “Yes” may result in lower confidence; this is acceptable.
-- Messages containing both spammy and legitimate content (e.g. forwarded chain letters) may produce ambiguous probabilities.  Threshold tuning is beyond this week’s scope.
+- Messages containing both spammy and legitimate content (e.g. forwarded chain letters) may produce ambiguous probabilities.

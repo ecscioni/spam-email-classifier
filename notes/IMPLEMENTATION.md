@@ -38,8 +38,8 @@ Both pipelines are built using Scikit‑Learn’s `Pipeline` class, which ensure
 To reproduce the pipeline, run the following commands:
 
 ```bash
-python src/train.py --data data/enron_sample.csv --out_dir .
-python src/evaluate.py --data data/enron_sample.csv --model models/best_model.joblib --out_dir reports
+python src/train.py --data data/enron_clean.csv --out_dir .
+python src/evaluate.py --data data/enron_clean.csv --model models/best_model.joblib --out_dir reports
 python src/predict_cli.py "Subject: Free vacation offer! Click here to claim."
 ```
 

@@ -14,3 +14,21 @@ reports/train_summary.json
 
 # Ignore other build artifacts
 .pytest_cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.joblib
+
+# Virtual env
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Reports / cache
+reports/
