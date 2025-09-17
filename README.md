@@ -55,6 +55,3 @@ Your scores will vary with the data split and dataset size.
   - **Multinomial Naive Bayes** assumes conditional independence of features and is particularly fast and effective on text【307774325658384†L127-L149】.
   - **Logistic Regression** models the probability of spam using a logistic (sigmoid) function. In scikit‑learn it is implemented as a linear classifier with regularisation; probabilities are converted to classes via a threshold【66734902495573†L838-L870】.
 - **Metrics**: we report accuracy, precision, recall and F1 score; see `TESTING.md` for details.
-
-## Licences & Data Use
-Datasets remain under their original licences. Always cite the source if you publish results. See `DATA_CARD.md` for details.
